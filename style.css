@@ -1,0 +1,48 @@
+.formulario {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#FormularioDoacao {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    width: 100%;
+}
+
+textarea,
+select {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 10px;
+    border: 2px solid #c2c2c2;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+
+}
