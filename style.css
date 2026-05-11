@@ -46,3 +46,50 @@ textarea {
     box-sizing: border-box;
 
 }
+
+h2,
+h3 {
+    text-align: center;
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(224, 222, 222);
+    margin: 0;
+}
+
+.titulo {
+    background-color: #e40101;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+
+
+.subtitulo {
+    background-color: rgb(124, 0, 0);
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+}
+
+.subtitulo h3 {
+    font-size: medium;
+    margin: 1px;
+}
+
+
+
+.img_subtitulo {
+    width: 120px;
+}
