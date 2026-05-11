@@ -29,5 +29,16 @@ document.getElementById("FormularioDoacao").addEventListener("submit", function 
             alert("Preencha todos os campos");
             return;
         }
+        
+         if (tipo_sangue === "") {
+        alert("Selecione o tipo sanguíneo");
+        return;
+        }
+
+         let regexTelefone = /^[0-9]+$/;
+    if (!regexTelefone.test(telefone)) {
+        alert("Telefone deve conter apenas números");
+        return;
+    }
 
       });
