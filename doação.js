@@ -29,7 +29,7 @@ document.getElementById("FormularioDoacao").addEventListener("submit", function 
             alert("Preencha todos os campos");
             return;
         }
-        
+
          if (tipo_sangue === "") {
         alert("Selecione o tipo sanguíneo");
         return;
@@ -41,4 +41,34 @@ document.getElementById("FormularioDoacao").addEventListener("submit", function 
         return;
     }
 
-      });
+    
+        let doador = {
+            nome: nome,
+            email: email,
+            idade: idade,
+            peso: peso,
+            tipoSanguineo: tipo_sangue,
+            telefone: telefone,
+            cidade: cidade,
+            estado: estado
+        };
+
+doadores.push(doador);
+
+        console.log(doadores);
+
+
+
+        document.getElementById("resultado").innerHTML =
+            "✅ Cadastro realizado com sucesso!<br><br>" +
+            "<strong>Nome:</strong> " + nome + "<br>" +
+            "<strong>Email:</strong> " + email + "<br>" +
+            "<strong>Idade:</strong> " + idade + "<br>" +
+            "<strong>Peso:</strong> " + peso + "<br>" +
+            "<strong>Tipo Sanguíneo:</strong> " + tipo_sangue + "<br>" +
+            "<strong>Telefone:</strong> " + telefone + "<br>" +
+            "<strong>Cidade:</strong> " + cidade + "<br>" +
+            "<strong>Estado:</strong> " + estado + "<h>";
+
+        document.getElementById("FormularioDoacao").reset();
+    });
